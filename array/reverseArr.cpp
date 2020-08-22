@@ -17,23 +17,5 @@ int main (void) {
     }
     cout<<"\n";
 
-    for (int k = 0; k < 5; k++) {
-        for (int x = k; x < 5; x++) {
-                if (arr[x] > arr[x + 1]) {
-                int temp = arr[x];
-                arr[x] = arr [x + 1];
-                arr[x + 1] = temp;
-            }
-
-        }
-    }
-
-    cout<<"Sorting Array: \n";
-    for (int z = 0; z < 5; z++) {
-        cout<<arr[z]<<"\t";
-    }
-    
-    cout <<"\n";
-
     return 0;
 }
