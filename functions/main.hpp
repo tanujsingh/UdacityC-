@@ -4,6 +4,7 @@ using namespace std;
 void printProduct(int a, int b, int c);
 void printEquation(int m1, int m2, int result, char operation);
 int sum(int m1, int m2);
+void increment(int &input);
 
 void printProduct(int a,int b,int c) {
     cout<<a<<" * "<<b<<" = "<<c<<"\n";
@@ -15,4 +16,9 @@ void printEquation(int m1, int m2, int result, char operation) {
 
 int sum(int m1, int m2) {
     return m1 + m2;
+}
+
+void increment(int &input) {
+    input++;
+    cout<<"In function call a = "<<input<<"\n";
 }
